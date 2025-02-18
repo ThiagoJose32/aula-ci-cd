@@ -10,7 +10,7 @@ on:
 
 jobs:
     build:
-        name: 'Build and Push'
+        name: 'Build and Push.'
         runs-on: ${{ matrix.os }}
 
         strategy:
@@ -51,5 +51,6 @@ jobs:
 
             - name: Push Docker Image to DockerHub
               run: docker push tjos1/aula_docker_devops:${{ steps.generate_tag.outputs.sha}}
-
+    
           
+
