@@ -10,7 +10,7 @@ on:
 
 jobs:
     build:
-        name: 'Build and Push.'
+        name: 'Build and Push'
         runs-on: ${{ matrix.os }}
 
         outputs:
