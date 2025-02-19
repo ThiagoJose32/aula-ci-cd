@@ -79,7 +79,7 @@ jobs:
             host: ${{ secrets.HOST }}
             username: ${{ secrets.USER }}
             key: ${{ secrets.SSH_PRIVATE_KEY }}
-            #password: ${{ secrets.PASSWORD }}
+            password: ${{ secrets.PASSWORD }}
             script: |
               # Extract the tag on job build
               TAG=${{ needs.build.outputs.docker_tag }}
