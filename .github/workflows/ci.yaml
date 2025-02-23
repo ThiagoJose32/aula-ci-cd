@@ -10,7 +10,7 @@ on:
 
 jobs:
     build:
-        name: 'Build and Push.'
+        name: 'Build and Push'
         runs-on: ${{ matrix.os }}
 
         outputs:
@@ -56,7 +56,7 @@ jobs:
               run: docker push tjos1/aula_docker_devops:${{ steps.generate_tag.outputs.sha}}
     
     deploy:
-      name: Deploy on AWS.
+      name: Deploy on AWS
       runs-on: ubuntu-latest
       needs: build
 
