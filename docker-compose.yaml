@@ -2,6 +2,7 @@ version: '3.7'
 
 services:
   api:
+    image: tjos1/aula_docker_devops:${DOCKER_IMAGE_TAG}
     build: .
     depends_on:
       db:
