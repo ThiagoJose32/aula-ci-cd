@@ -3,7 +3,7 @@ version: '3.7'
 services:
   api:
     image: tjos1/aula_docker_devops:${DOCKER_IMAGE_TAG}
-    build: .
+    #build: .
     depends_on:
       db:
         condition: service_healthy
